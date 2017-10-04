@@ -1,0 +1,32 @@
+base:
+    # 调试开关（打开后日志等级变成DEBUG）
+    debug : false
+    # 日志等级
+    logLevel : INFO
+    # 是否隐藏启动程序后的横幅（有没有无所谓）
+    hideBanner : true
+    # 是否禁用 HTTP2
+    disableHTTP2 : false
+    # 请求报文大小限制
+    bodyLimit : 2M
+    # 跨域设置，参考:https://echo.labstack.com/middleware/cors
+    CORS :
+        allowOrigins : ['*']
+        allowMethods : ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE']
+    # 跨站请求伪造, 空字符串使用默认值, 参考:'https://echo.labstack.com/middleware/csrf
+    CSRFTokenLookup : ''
+    # 数据压缩等级
+    gzipLevel : -1
+server:
+    # 监听的地址与端口
+    listenAddr : 0.0.0.0:61234
+    # 读超时（秒）
+    readTimeout : 20
+    # 写超时（秒）
+    writeTimeout : 20
+db:
+    driver : mysql
+    addr: 10.0.0.70:3306
+    name: stock
+    user: db_user
+    pwd: db_pwd
