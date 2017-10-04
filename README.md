@@ -3,7 +3,7 @@
 
 ## 依赖的第三方库
     echo : github.com/labstack/echo
-    Mysql : github.com/Go-SQL-Driver/MySQL
+    Mysql : github.com/go-sql-driver/mysql
     go-yedb : github.com/yejiansnake/go-yedb
     yaml : github.com/go-yaml/yaml
 
