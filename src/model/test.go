@@ -9,8 +9,8 @@ type Test struct {
 	Id        int64     `json:"id"`
 	Name      string    `json:"name"`
 	Type      uint8     `json:"type"`
-	Create_at string `json:"create_at"`
-	Update_at string `json:"update_at"`
+	Create_at string `json:"createAt"`
+	Update_at string `json:"updateAt"`
 }
 
 func GetTestModel() *yedb.DbModel {

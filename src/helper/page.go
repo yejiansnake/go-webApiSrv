@@ -6,10 +6,10 @@ import (
 )
 
 type PageMeta struct {
-	PageIndex int `json:"page_index"`
-	PageSize int `json:"page_size"`
-	PageCount int `json:"page_count"`
-	RowCount int64`json:"row_count"`
+	PageIndex int `json:"pageIndex"`
+	PageSize int `json:"pageSize"`
+	PageCount int `json:"pageCount"`
+	RowCount int64`json:"rowCount"`
 }
 
 type PageData struct {
