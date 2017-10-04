@@ -15,3 +15,7 @@
 5. utility: 操作系统级别的功能封装
 6. common: 全局常理声明定义
 7. sys: 系统级别功能封装，如需增加配置在 src/sys/config 下编写(使用yaml格式，配置文件在 bin/config.yaml)
+
+## 编译
+1. 使用了相对路径，编译的时候命令必须为 go build -o appName
+2. 使用 go build -o appName 编译不需要将代码放在 $GOPATH/src 下

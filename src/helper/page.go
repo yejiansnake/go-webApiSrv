@@ -29,6 +29,14 @@ func GetPageData(query yedb.IQuery, ptrRows interface{}, pageIndex int, pageSize
 		return
 	}
 
+	if pageIndex == 0 {
+		pageIndex = 1
+	}
+
+	if pageSize == 0 {
+		pageSize = 20
+	}
+
 	if pageIndex > 0 && pageSize > 0 {
 		data.Meta.RowCount, _ = query.Limit(0).Offset(0).Count()
 		data.Meta.PageIndex = pageIndex
